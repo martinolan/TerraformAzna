@@ -1,0 +1,7 @@
+package_update: true
+package_upgrade : true
+packages:
+  - docker
+  - ssh
+runcmd:
+  - ["sh", "/var/lib/cloud/instance/scripts/init.sh"]

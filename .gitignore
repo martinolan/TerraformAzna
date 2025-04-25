@@ -1,0 +1,16 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+*.bak
+*.backup
+*.swp
+*.log
+*.tfstate.d/
+*.plan
+*~
+*.swp
+.envrc
