@@ -55,6 +55,12 @@ terraform apply
   - Utilisateur : admin
   - Mot de passe : disponible dans la sortie `password_geoserver`
 
+
+## Docker 
+
+- [PostGis](https://hub.docker.com/r/postgis/postgis)
+- [GeoServer](https://github.com/geoserver/docker)
+
 ## Nettoyage
 
 Pour détruire l'infrastructure :
