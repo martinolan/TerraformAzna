@@ -25,9 +25,9 @@ data "cloudinit_config" "config" {
   }
 
   part {
-    filename = "init.sh"
+    filename = "start.sh"
     content_type = "text/x-shellscript"
-    content = templatefile("${path.module}/scripts/test.sh",
+    content = templatefile("${path.module}/scripts/start.sh",
       {
         password_postgres = random_password.password.result,
         password_geoserver = random_password.password_geoserver.result,
@@ -123,7 +123,7 @@ resource "azurerm_linux_virtual_machine" "cenTest" {
 
   admin_ssh_key {
     username = "adminuser"
-    public_key = file("~/.ssh/id_rsa_adminuser_azurerm.pub")
+    public_key = file("~/.ssh/ssh_key.pub")
   }
 
   os_disk {
